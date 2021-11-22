@@ -1,0 +1,104 @@
+DEBUG 2021-11-20 08:44:36,138 - starting thread (client mode): 0xda72b370
+DEBUG 2021-11-20 08:44:36,138 - Local version/idstring: SSH-2.0-paramiko_2.6.0
+DEBUG 2021-11-20 08:44:36,201 - Remote version/idstring: SSH-2.0-OpenSSH_7.9p1 Raspbian-10+deb10u2+rpt1
+INFO 2021-11-20 08:44:36,202 - Connected (version 2.0, client OpenSSH_7.9p1)
+DEBUG 2021-11-20 08:44:36,205 - kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group14-sha256', 'diffie-hellman-group14-sha1'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] server encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+DEBUG 2021-11-20 08:44:36,206 - Kex agreed: curve25519-sha256@libssh.org
+DEBUG 2021-11-20 08:44:36,206 - HostKey agreed: ssh-ed25519
+DEBUG 2021-11-20 08:44:36,206 - Cipher agreed: aes128-ctr
+DEBUG 2021-11-20 08:44:36,207 - MAC agreed: hmac-sha2-256
+DEBUG 2021-11-20 08:44:36,207 - Compression agreed: none
+DEBUG 2021-11-20 08:44:36,287 - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG 2021-11-20 08:44:36,289 - Switch to new keys ...
+DEBUG 2021-11-20 08:44:36,290 - Attempting password auth...
+DEBUG 2021-11-20 08:44:36,302 - userauth is OK
+INFO 2021-11-20 08:44:36,454 - Authentication (password) successful!
+DEBUG 2021-11-20 08:44:36,456 - [chan 0] Max packet in: 32768 bytes
+DEBUG 2021-11-20 08:44:36,568 - Received global request "hostkeys-00@openssh.com"
+DEBUG 2021-11-20 08:44:36,569 - Rejecting "hostkeys-00@openssh.com" global request from server.
+DEBUG 2021-11-20 08:44:36,618 - [chan 0] Max packet out: 32768 bytes
+DEBUG 2021-11-20 08:44:36,618 - Secsh channel 0 opened.
+DEBUG 2021-11-20 08:44:36,626 - [chan 0] Sesch channel 0 request ok
+INFO 2021-11-20 08:44:36,640 - [chan 0] Opened sftp connection (server version 3)
+DEBUG 2021-11-20 08:44:36,641 - [chan 0] listdir(b'/home/pi/release')
+DEBUG 2021-11-20 08:44:36,662 - [chan 0] stat(b'/home/pi/release/DATA_LOGGER_MAIN.py')
+DEBUG 2021-11-20 08:44:36,667 - [chan 0] open(b'/home/pi/release/DATA_LOGGER_MAIN.py', 'rb')
+DEBUG 2021-11-20 08:44:36,671 - [chan 0] open(b'/home/pi/release/DATA_LOGGER_MAIN.py', 'rb') -> 00000000
+DEBUG 2021-11-20 08:44:36,688 - [chan 0] close(00000000)
+INFO 2021-11-20 08:44:36,693 - /home/rld-toughdev/Desktop/DATA_LOGGER_DEV/DATA_LOGGER_RELEASE//DATA_LOGGER_MAIN.py stored on local server
+INFO 2021-11-20 08:44:36,693 - /home/pi/release/DATA_LOGGER_MAIN.py removed from remote sever
+DEBUG 2021-11-20 08:44:36,694 - [chan 0] stat(b'/home/pi/release/DISPLAY_TEXT.py')
+DEBUG 2021-11-20 08:44:36,699 - [chan 0] open(b'/home/pi/release/DISPLAY_TEXT.py', 'rb')
+DEBUG 2021-11-20 08:44:36,710 - [chan 0] open(b'/home/pi/release/DISPLAY_TEXT.py', 'rb') -> 00000000
+DEBUG 2021-11-20 08:44:36,724 - [chan 0] close(00000000)
+INFO 2021-11-20 08:44:36,729 - /home/rld-toughdev/Desktop/DATA_LOGGER_DEV/DATA_LOGGER_RELEASE//DISPLAY_TEXT.py stored on local server
+INFO 2021-11-20 08:44:36,730 - /home/pi/release/DISPLAY_TEXT.py removed from remote sever
+DEBUG 2021-11-20 08:44:36,731 - [chan 0] stat(b'/home/pi/release/control_buttons.py')
+DEBUG 2021-11-20 08:44:36,735 - [chan 0] open(b'/home/pi/release/control_buttons.py', 'rb')
+DEBUG 2021-11-20 08:44:36,742 - [chan 0] open(b'/home/pi/release/control_buttons.py', 'rb') -> 00000000
+DEBUG 2021-11-20 08:44:36,756 - [chan 0] close(00000000)
+INFO 2021-11-20 08:44:36,760 - /home/rld-toughdev/Desktop/DATA_LOGGER_DEV/DATA_LOGGER_RELEASE//control_buttons.py stored on local server
+INFO 2021-11-20 08:44:36,760 - /home/pi/release/control_buttons.py removed from remote sever
+DEBUG 2021-11-20 08:44:36,761 - [chan 0] stat(b'/home/pi/release/make_csv_file.py')
+DEBUG 2021-11-20 08:44:36,764 - [chan 0] open(b'/home/pi/release/make_csv_file.py', 'rb')
+DEBUG 2021-11-20 08:44:36,768 - [chan 0] open(b'/home/pi/release/make_csv_file.py', 'rb') -> 00000000
+DEBUG 2021-11-20 08:44:36,783 - [chan 0] close(00000000)
+INFO 2021-11-20 08:44:36,786 - /home/rld-toughdev/Desktop/DATA_LOGGER_DEV/DATA_LOGGER_RELEASE//make_csv_file.py stored on local server
+INFO 2021-11-20 08:44:36,786 - /home/pi/release/make_csv_file.py removed from remote sever
+INFO 2021-11-20 08:44:36,786 - Files from: 192.168.1.237 directory /home/pi/release
+INFO 2021-11-20 08:44:36,786 - Files stored: /home/rld-toughdev/Desktop/DATA_LOGGER_DEV/DATA_LOGGER_RELEASE/
+DEBUG 2021-11-20 08:44:36,786 - [chan 0] stat(b'/home/pi/release')
+INFO 2021-11-20 08:44:36,789 - [chan 0] sftp session closed.
+DEBUG 2021-11-20 08:44:36,789 - [chan 0] EOF sent (0)
+DEBUG 2021-11-21 19:07:38,960 - starting thread (client mode): 0x188f370
+DEBUG 2021-11-21 19:07:38,961 - Local version/idstring: SSH-2.0-paramiko_2.6.0
+DEBUG 2021-11-21 19:07:39,024 - Remote version/idstring: SSH-2.0-OpenSSH_7.9p1 Raspbian-10+deb10u2+rpt1
+INFO 2021-11-21 19:07:39,024 - Connected (version 2.0, client OpenSSH_7.9p1)
+DEBUG 2021-11-21 19:07:39,027 - kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group14-sha256', 'diffie-hellman-group14-sha1'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] server encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+DEBUG 2021-11-21 19:07:39,027 - Kex agreed: curve25519-sha256@libssh.org
+DEBUG 2021-11-21 19:07:39,028 - HostKey agreed: ssh-ed25519
+DEBUG 2021-11-21 19:07:39,028 - Cipher agreed: aes128-ctr
+DEBUG 2021-11-21 19:07:39,028 - MAC agreed: hmac-sha2-256
+DEBUG 2021-11-21 19:07:39,028 - Compression agreed: none
+DEBUG 2021-11-21 19:07:39,095 - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG 2021-11-21 19:07:39,096 - Switch to new keys ...
+DEBUG 2021-11-21 19:07:39,097 - Attempting password auth...
+DEBUG 2021-11-21 19:07:39,103 - userauth is OK
+INFO 2021-11-21 19:07:39,266 - Authentication (password) successful!
+DEBUG 2021-11-21 19:07:39,268 - [chan 0] Max packet in: 32768 bytes
+DEBUG 2021-11-21 19:07:39,373 - Received global request "hostkeys-00@openssh.com"
+DEBUG 2021-11-21 19:07:39,373 - Rejecting "hostkeys-00@openssh.com" global request from server.
+DEBUG 2021-11-21 19:07:39,420 - [chan 0] Max packet out: 32768 bytes
+DEBUG 2021-11-21 19:07:39,421 - Secsh channel 0 opened.
+DEBUG 2021-11-21 19:07:39,429 - [chan 0] Sesch channel 0 request ok
+INFO 2021-11-21 19:07:39,445 - [chan 0] Opened sftp connection (server version 3)
+DEBUG 2021-11-21 19:07:39,446 - [chan 0] listdir(b'/home/pi/release')
+DEBUG 2021-11-21 19:07:39,469 - [chan 0] stat(b'/home/pi/release/DATA_LOGGER_MAIN.py')
+DEBUG 2021-11-21 19:07:39,474 - [chan 0] open(b'/home/pi/release/DATA_LOGGER_MAIN.py', 'rb')
+DEBUG 2021-11-21 19:07:39,480 - [chan 0] open(b'/home/pi/release/DATA_LOGGER_MAIN.py', 'rb') -> 00000000
+DEBUG 2021-11-21 19:07:39,500 - [chan 0] close(00000000)
+INFO 2021-11-21 19:07:39,507 - /home/rld-toughdev/Desktop/DATA_LOGGER_DEV/DATA_LOGGER_RELEASE//DATA_LOGGER_MAIN.py stored on local server
+INFO 2021-11-21 19:07:39,508 - /home/pi/release/DATA_LOGGER_MAIN.py removed from remote sever
+DEBUG 2021-11-21 19:07:39,508 - [chan 0] stat(b'/home/pi/release/DISPLAY_TEXT.py')
+DEBUG 2021-11-21 19:07:39,513 - [chan 0] open(b'/home/pi/release/DISPLAY_TEXT.py', 'rb')
+DEBUG 2021-11-21 19:07:39,518 - [chan 0] open(b'/home/pi/release/DISPLAY_TEXT.py', 'rb') -> 00000000
+DEBUG 2021-11-21 19:07:39,538 - [chan 0] close(00000000)
+INFO 2021-11-21 19:07:39,543 - /home/rld-toughdev/Desktop/DATA_LOGGER_DEV/DATA_LOGGER_RELEASE//DISPLAY_TEXT.py stored on local server
+INFO 2021-11-21 19:07:39,543 - /home/pi/release/DISPLAY_TEXT.py removed from remote sever
+DEBUG 2021-11-21 19:07:39,544 - [chan 0] stat(b'/home/pi/release/control_buttons.py')
+DEBUG 2021-11-21 19:07:39,548 - [chan 0] open(b'/home/pi/release/control_buttons.py', 'rb')
+DEBUG 2021-11-21 19:07:39,551 - [chan 0] open(b'/home/pi/release/control_buttons.py', 'rb') -> 00000000
+DEBUG 2021-11-21 19:07:39,565 - [chan 0] close(00000000)
+INFO 2021-11-21 19:07:39,570 - /home/rld-toughdev/Desktop/DATA_LOGGER_DEV/DATA_LOGGER_RELEASE//control_buttons.py stored on local server
+INFO 2021-11-21 19:07:39,570 - /home/pi/release/control_buttons.py removed from remote sever
+DEBUG 2021-11-21 19:07:39,571 - [chan 0] stat(b'/home/pi/release/make_csv_file.py')
+DEBUG 2021-11-21 19:07:39,580 - [chan 0] open(b'/home/pi/release/make_csv_file.py', 'rb')
+DEBUG 2021-11-21 19:07:39,583 - [chan 0] open(b'/home/pi/release/make_csv_file.py', 'rb') -> 00000000
+DEBUG 2021-11-21 19:07:39,601 - [chan 0] close(00000000)
+INFO 2021-11-21 19:07:39,607 - /home/rld-toughdev/Desktop/DATA_LOGGER_DEV/DATA_LOGGER_RELEASE//make_csv_file.py stored on local server
+INFO 2021-11-21 19:07:39,607 - /home/pi/release/make_csv_file.py removed from remote sever
+INFO 2021-11-21 19:07:39,607 - Files from: 192.168.1.237 directory /home/pi/release
+INFO 2021-11-21 19:07:39,607 - Files stored: /home/rld-toughdev/Desktop/DATA_LOGGER_DEV/DATA_LOGGER_RELEASE/
+DEBUG 2021-11-21 19:07:39,607 - [chan 0] stat(b'/home/pi/release')
+INFO 2021-11-21 19:07:39,610 - [chan 0] sftp session closed.
+DEBUG 2021-11-21 19:07:39,610 - [chan 0] EOF sent (0)
