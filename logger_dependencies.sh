@@ -2,11 +2,22 @@
 sudo apt update
 sudo apt install python3-pip
 pip3 install schedule
+
+#Install driver for Pimoroni Display HAT Mini
+echo 'Install driver for Pimoroni Display HAT Mini'
 sudo apt install python-rpi.gpio python-spidev python-pip python-pil python-numpy
 sudo pip3 install st7789
 git clone https://github.com/pimoroni/st7789-python
 
+#Install driver for Pimoroni PA1010D GPS Breakout
+echo 'Install driver for Pimoroni PA1010D GPS Breakout'
+sudo raspi-config nonint do_i2c 0 #Enable I2C
+git clone https://github.com/pimoroni/pa1010d-python
+cd pa1010d-python
+sudo ./install.sh
+
 #Install drivers Zero2Go Omini Rev2 Raspberry Pi HAT: https://www.uugear.com/doc/Zero2Go_Omini_Rev2_UserManual.pdf
+echo 'Install drivers Zero2Go Omini Rev2 Raspberry Pi HAT: https://www.uugear.com/doc/Zero2Go_Omini_Rev2_UserManual.pdf'
 #Zero2Go Omini Rev2 raspberry pi HAT:
 cd ~/
 wget http://www.uugear.com/repo/Zero2GoOmini/installZero2Go.sh
