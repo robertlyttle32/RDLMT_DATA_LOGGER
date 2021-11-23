@@ -214,7 +214,7 @@ def run(count):
             print('Longitude: ', LONGITUDE)
             print('Latitude: ', LATITUDE)
             global MESSAGE1
-            MESSAGE1 = f'GPS LOGGING: {count}\n Sat: {NUM_SATS}'
+            MESSAGE1 = f'GPS LOGGING: {count}\nSAT: {NUM_SATS}' # print multiple lines on Pimoroni dhmini Display
 
     except (ValueError, IOError) as err:
         print(err)
