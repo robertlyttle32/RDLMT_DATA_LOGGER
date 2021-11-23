@@ -214,7 +214,7 @@ def run(count):
             print('Longitude: ', LONGITUDE)
             print('Latitude: ', LATITUDE)
             global MESSAGE1
-            MESSAGE1 = f'GPS LOGGING: {count}\nSAT: {NUM_SATS}' # print multiple lines on Pimoroni dhmini Display
+            MESSAGE1 = f'GPS LOGGING: {count}\nSAT: {NUM_SATS}\nGPS QUAL: {GPS_QUAL}\nFIX TYPE: {FIX_TYPE}'# print multiple lines on Pimoroni dhmini Display
 
     except (ValueError, IOError) as err:
         print(err)
@@ -275,7 +275,7 @@ while True:
 
     else:
         run(count)
-    get_display(50, 110,MESSAGE1)  # get_display(x, y, message) x is vertical position and y is horizontal
+    get_display(50, 80,MESSAGE1)  # get_display(x, y, message) x is vertical position and y is horizontal
     time.sleep(1)
     count = count + 1
 
