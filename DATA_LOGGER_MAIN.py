@@ -214,8 +214,7 @@ def run(count):
             print('Longitude: ', LONGITUDE)
             print('Latitude: ', LATITUDE)
             global MESSAGE1
-            MESSAGE1 = f'GPS LOGGING: {count}'
-            MESSAGE2 = LATITUDE
+            MESSAGE1 = f'GPS LOGGING: {count}\n Sat: {NUM_SATS}'
 
     except (ValueError, IOError) as err:
         print(err)
@@ -276,8 +275,6 @@ while True:
 
     else:
         run(count)
-    #get_display(20, 20,'START')
-    #get_display(20, 150,'STOP')
     get_display(50, 110,MESSAGE1)  # get_display(x, y, message) x is vertical position and y is horizontal
     time.sleep(1)
     count = count + 1
