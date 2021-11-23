@@ -2,6 +2,7 @@
 sudo apt update
 sudo apt install python3-pip
 pip3 install schedule
+pip3 install pysftp
 
 #Install driver for Pimoroni Display HAT Mini
 echo 'Install driver for Pimoroni Display HAT Mini'
