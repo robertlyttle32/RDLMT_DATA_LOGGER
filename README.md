@@ -8,3 +8,8 @@ Zero2Go Omni power supply: (https://shop.pimoroni.com/products/zero2go-omini-rev
 PA1010D GPS Breakout: (https://shop.pimoroni.com/products/pa1010d-gps-breakout)
 40-pin female header with long terminals: (https://shop.pimoroni.com/products/2x20-pin-gpio-header-for-raspberry-pi-2-b-a?variant=1132812269)
 40-pin male header: (https://shop.pimoroni.com/products/male-40-pin-2x20-hat-header?variant=10476117383)
+To Run at reboot:
+Open terminal
+Type <crontab -e> then press Enter (do NOT yes sudo)
+Next type <@reboot pyhron3 script.py
+Then save.
