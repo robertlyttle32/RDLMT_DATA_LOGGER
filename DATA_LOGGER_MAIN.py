@@ -126,7 +126,6 @@ def make_new_dir():
     #print (path)
     return STORAGE_DIRECTORY
 
-
 def get_csv_num():
     try:
         count = 0
@@ -214,7 +213,7 @@ def run(count):
             print('Longitude: ', LONGITUDE)
             print('Latitude: ', LATITUDE)
             global MESSAGE1
-            MESSAGE1 = f'TIME: {TIMESTAMP}\nGPS LOGGING: {count}\nSAT: {NUM_SATS}\nGPS QUAL: {GPS_QUAL}'# print multiple lines on Pimoroni dhmini Display
+            MESSAGE1 = f'TIME: {TIME}\nGPS LOGGING: {count}\nSAT: {NUM_SATS}\nGPS QUAL: {GPS_QUAL}'# print multiple lines on Pimoroni dhmini Display
 
     except (ValueError, IOError) as err:
         print(err)
