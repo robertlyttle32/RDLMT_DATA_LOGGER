@@ -113,7 +113,7 @@ def daily_folder():
 def make_new_dir():
     FUNCTION = 'GPS'
     HOME = Path.home()
-    STORAGE_DIRECTORY = f'{HOME}/{FUNCTION}_{daily_folder()}'
+    STORAGE_DIRECTORY = f'{HOME}/{FUNCTION}_{daily_folder()}}'
 
     if os.path.exists(STORAGE_DIRECTORY):
         pass
