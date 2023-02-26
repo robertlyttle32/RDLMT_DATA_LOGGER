@@ -1,5 +1,5 @@
 # RDLMT_DATA_LOGGER
-A data logger for general use for logging all data types once configured.  Includes a 2.0 inch LCD display and four push-buttons for stand alone operations. No need to ssh in order to start, stop, reset log file, or to power-down the logger.
+A data logger for general use for logging all data types once configured.  It includes a 2.0 inch LCD display and four push-buttons for stand alone operations. No need to ssh in order to start, stop, reset log file, or to power-down the logger.
 
 Part List:
 Pimononi Display Hat Mini: (https://shop.pimoroni.com/products/display-hat-mini)
